@@ -36,15 +36,31 @@
 		line-height: 1.51;
 		font-size: 18px;
 	}
+	:global(article){
+		display:grid;
+	}
+	:global(article p){
+		position: relative;
+		z-index: 0; 
+		float:left;
+		display:inline-grid;
+		width: 75%;
+	}
 	:global(a){
 		color:darkgoldenrod;
 		text-decoration: none;
 	}
 
-:global(aside p){
-    background-color: aquamarine;
-	margin: 3px;
+	:global(aside){
+    width:auto;
+	float: right;
+	position: relative;
+	z-index: 9999;
+	padding: 5px;
+	border: 1px dotted black;
+	background-color: aquamarine;
 }
+
 
 :global(label){
 	display: inline;
