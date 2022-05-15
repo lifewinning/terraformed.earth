@@ -5,9 +5,9 @@ export async function getPosts() {
       import.meta.globEager('/src/routes/posts/*.md')
     )
         // get post metadata
-      .map(([path, post]) => ({slug: slugFromPath(path), metadata: post.metadata}))
+      .map(([path, post]) => ({slug: slugFromPath(path), metadata: post.metadata, date: post.metadata.date}))
       // sort by date
-    //   .sort((a, b) => (a.date < b.date ? 1 : -1))
+      .sort((a, b) => (a.date < b.date ? 1 : -1))
   
     return posts
   }

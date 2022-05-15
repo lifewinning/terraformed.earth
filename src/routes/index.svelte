@@ -26,6 +26,7 @@
 </script>
 
 <PageHead title="Home" description="a blog about terraforming, broadly speaking" />
+<a href="/rss.xml">RSS</a>
 
 
 {#each posts as { slug, title, author, description, date }}

@@ -2,7 +2,7 @@
 title: "Today in Terraforms"
 description: "Voids, data centers"
 author: "Ingrid Burrington"
-date: "2021-05-11"
+date: "2022-05-11"
 published: true
 ---
 
